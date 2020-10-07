@@ -4,8 +4,7 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  - push
 
 jobs:
   build:
@@ -17,9 +16,8 @@ jobs:
         with:
           node-version: 12
       - run: npm ci
-      - run: | 
-        export DISPLAY=:99
-        npm test &
+      - run: export DISPLAY=:99
+      - run: npm test 
 
   publish-npm:
     needs: build
