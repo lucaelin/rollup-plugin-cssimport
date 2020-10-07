@@ -1,4 +1,4 @@
-const { createFilter } = require('rollup-pluginutils');
+const { createFilter } = require('@rollup/pluginutils');
 
 const generateJS = (code) => `
 const sheet = new CSSStyleSheet();
