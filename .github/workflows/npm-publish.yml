@@ -15,6 +15,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - run: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+      - run: dpkg -i google-chrome-stable_current_amd64.deb; apt-get -fy install
       - run: npm ci
       - run: npm test
 
