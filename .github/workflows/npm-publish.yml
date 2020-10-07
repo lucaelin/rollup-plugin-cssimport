@@ -19,7 +19,7 @@ jobs:
       - run: npm ci
       - run: | 
         export DISPLAY=:99
-        npm test
+        npm test &
 
   publish-npm:
     needs: build
