@@ -1,4 +1,7 @@
 # rollup-plugin-cssimport
+
+Please consider migrating to [rollup-plugin-import-assert](https://github.com/calebdwilliams/rollup-plugin-import-assert), as it better aligns with modern web standards.
+
 Very simple rollup plugin to transform .css-files into CSSStyleSheet objects.
 
 This works natively in chrome. Firefox and other browsers require a Polyfill (like https://github.com/calebdwilliams/construct-style-sheets) 
